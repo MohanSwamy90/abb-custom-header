@@ -1,3 +1,4 @@
 {
-  "name": "abb-discourse-tag-list"
+  "name": "abb-custom-header",
+  "component": true
 }
