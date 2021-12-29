@@ -5,8 +5,12 @@
     headerLogo:'https://dev.partnerhub.connect.abb.com/cdn/images/abb-logo.svg',
     headerText:'Connect Partner Hub',
     links:[{
+      linkText:'Discover',
+      linkUrl:'https://dev.partnerhub.connect.abb.com/discover/'
+    },
+    {
       linkText:'Learning',
-      linkUrl:'sjflsj'
+      linkUrl:'https://dev.partnerhub.connect.abb.com/Learning/'
     }]
   };
 
@@ -36,6 +40,13 @@
         <img alt="abb logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
         <span class="abb-title"> {{headerDetails.headerText}} </span>
       </div>
+      <ul class="nav-list">
+        {{#each headerDetails.links as |l|}}
+        <li>
+          <a class="tile-name" href="{{l.linkUrl}}">{{l.linkText}}</a>
+        </li>
+        {{/each}}
+      </ul>
 
     </div>
   </div>
