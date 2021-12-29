@@ -8,9 +8,9 @@
       linkText:'Learning',
       linkUrl:'sjflsj'
     }]
-  };   
+  };
 
-  
+
   const currentUser = api.getCurrentUser();
 
   api.registerConnectorClass('above-site-header', 'abb-header', {
@@ -26,17 +26,22 @@
   });
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/above-site-header/abb-header">
-  <div class="header-container">
-    <div class="title-content">
-      <img alt="abb logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
-      <span class="abb-title"> {{headerDetails.headerText}} </span>
+<script
+  type="text/x-handlebars"
+  data-template-name="/connectors/above-site-header/abb-header"
+>
+    <div class="header-container">
+    <div class="header-content">
+      <div class="title-content">
+        <img alt="abb logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
+        <span class="abb-title"> {{headerDetails.headerText}} </span>
+      </div>
+
     </div>
-    
   </div>
 </script>
 <script>
- Ember.Handlebars.registerHelper('test', function () {
+  Ember.Handlebars.registerHelper("test", function () {
     return `test`;
   });
 </script>
