@@ -2,7 +2,7 @@
   const container = Discourse.__container__;
   const { ajax } = require("discourse/lib/ajax");
   const headerData={
-    headerLogo:'',
+    headerLogo:'https://dev.partnerhub.connect.abb.com/cdn/images/abb-logo.svg',
     headerText:'Connect Partner Hub',
     links:[{
       linkText:'Learning',
@@ -28,7 +28,11 @@
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-site-header/abb-header">
   <div class="header-container">
-    {{headerDetails.headerText}}
+    <div class="title-content">
+      <img alt="abb logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
+      <span class="abb-title"> {{headerDetails.headerText}} </span>
+    </div>
+    
   </div>
 </script>
 <script>
