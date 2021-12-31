@@ -1,49 +1,89 @@
+
 .header-container {
-  height: 64px;
-  width: 100%;
-  padding: 0 16px 0 16px;
-  background-color: #fff;
-  color: #242424;
-  box-shadow: 0 2px 6px -2px #cccc;
-  border-bottom: solid 1px #cccc;
+    grid-area: header;
+    background-color: #fff;
+    color: #242424;
+    box-shadow: 0 2px 6px -2px #ccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1002;
+    height: 5rem;
+    display: block;
 }
 
-.abb-header-content {
+
+.header-container .header {
+
+    grid-area: header;
+    background-color: #fff;
+    color: #242424;
+    box-shadow: 0 2px 6px -2px #ccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1002;
+    height: 5rem;
+    display: block;
+}
+
+
+.header-container .header-content{
+    padding: 0 2rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.abb-header-content .abb-logo {
+  width: 96px;
+}
+
+.header-container .header .abb-title{
+    display: inline;
+    padding: 0 0 0 1.5rem;
+    font-size: 1.4rem;
+}
+
+.header-container .header .nav-list{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    position: relative;
+    top: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.header-container .header .nav-list li{
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 1px;
+}
+
+.header-container .header .nav-list li .nav-item-content{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.title-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.abb-title {
-  margin-bottom: 0;
-  font-family: Abbvoice-medium, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 16px;
-}
-
-.nav-list{
-  display: flex;
-  justify-content: space-around;
-  width: auto;
-  list-style: none;
-}
-.tile-name{
-  font-size: 13px;
-  padding:0px 8px 0px 8px;
-  font-family: Abbvoice-medium,sans-serif;
-  cursor: pointer;
-  font-weight: 400;
-  color:#242424 !important;
-}
-
-.login-wrap{
-  flex-basis: 10%;
+.header-container .header .nav-list li .nav-item-content .tile-name{
+    padding: 0 0.8rem;
+    font-size: 1.1rem;
+    font-family: Abbvoice-medium,sans-serif;
+    cursor: pointer;
 }
