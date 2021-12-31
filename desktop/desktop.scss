@@ -119,6 +119,12 @@ body{
 }
 
 .header-container .header .user-name{
+    font-family: Abbvoice-medium,sans-serif;
+    cursor: pointer;
     font-size: 1.1rem;
     padding: 0;
+}
+
+.header-container .header .px-2{
+  padding-right: 0.5rem !important;
 }
