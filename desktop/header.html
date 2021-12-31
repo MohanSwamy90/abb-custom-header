@@ -59,24 +59,28 @@
   data-template-name="/connectors/above-site-header/abb-header"
 >
     <div class="header-container">
-    <div class="abb-header-content">
-      <div class="title-content">
-        <img alt="abb logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
-        <span class="abb-title"> {{headerDetails.headerText}} </span>
-      </div>
-      <ul class="nav-list">
-        {{#each headerDetails.links as |l|}}
-        <li>
-          <a class="tile-name" href="{{l.linkUrl}}">{{l.linkText}}</a>
-        </li>
-        {{/each}}
-      </ul>
-      <div class="login-wrap"></div>
-    </div>
-  </div>
-</script>
-<script>
-  Ember.Handlebars.registerHelper("test", function () {
-    return `test`;
-  });
+      <header class="header">
+        <div class="header-content">
+          <div class="title-content">
+            <img alt="abb logo" class="abb-logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
+            <span class="abb-title"> {{headerDetails.headerText}} </span>
+          </div>
+          <ul class="nav-list">
+            {{#each headerDetails.links as |l|}}
+            <li>
+              <div class="title-div">
+                <div class="nav-item-content">
+                  <div class="tile-div">
+                    <div class="tile-name">
+                      <a class="tile-name" href="{{l.linkUrl}}">{{l.linkText}}</a>
+                    </div>   
+                  </div>                 
+                </div>                             
+              </div>              
+            </li>
+            {{/each}}
+          </ul>
+          <div class="login-wrap"></div>
+        </div>
+      </header>
 </script>
