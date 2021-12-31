@@ -1,10 +1,13 @@
+body{
+  overflow-x: hidden;
+}
+
 
 .header-container {
     grid-area: header;
     background-color: #fff;
     color: #242424;
-    box-shadow: 0 2px 6px -2px #ccc;
-    position: fixed;
+    box-shadow: 0 2px 6px -2px #ccc;   
     width: 100%;
     top: 0;
     right: 0;
