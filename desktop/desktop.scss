@@ -100,3 +100,24 @@ body{
 .header-container .header .nav-list li .nav-item-content .tile-name a{
  color: #242424;
 }
+
+.header-container .header .p-2{
+  padding: 0.5rem !important;
+}
+
+.header-container .header .expand-user-options{
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-container .header .user-image{
+    width: 30px;
+    height: 30px;
+}
+
+.header-container .header .user-name{
+    font-size: 1.1rem;
+    padding: 0;
+}
