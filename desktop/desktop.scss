@@ -47,7 +47,7 @@
     align-items: center;
 }
 
-.abb-header-content .abb-logo {
+.header-content .abb-logo {
   width: 96px;
 }
 
@@ -55,6 +55,10 @@
     display: inline;
     padding: 0 0 0 1.5rem;
     font-size: 1.4rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-family: Abbvoice-medium,sans-serif;
+    font-weight: 500;
 }
 
 .header-container .header .nav-list{
@@ -86,4 +90,5 @@
     font-size: 1.1rem;
     font-family: Abbvoice-medium,sans-serif;
     cursor: pointer;
+    color: #242424;
 }
