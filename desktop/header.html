@@ -41,6 +41,8 @@
 
   const currentUser = api.getCurrentUser();
 
+  console.log(currentUser);
+
   api.registerConnectorClass('above-site-header', 'abb-header', {
     tagName: "div.sticky-sidebar",
     setupComponent(args, component) {
