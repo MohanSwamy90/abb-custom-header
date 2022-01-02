@@ -65,8 +65,11 @@
         component.set("headerDetails",headerData)      
         
         debugger;
-          $(".btn-login").click(function(){
-           
+          if(currentUser.isAdmin){
+            $("body").addClass("admin");
+          }
+
+          $(".btn-login").click(function(){           
             $(".login-button").trigger("click");
         });
          
