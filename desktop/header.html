@@ -3,8 +3,7 @@
   const { ajax } = require("discourse/lib/ajax");
   const {registerHelper} = require('discourse-common/lib/helpers');
 
-  registerHelper('isLoggedIn', (function(param) {
-    debugger;
+  registerHelper('isLoggedIn', (function(param) {   
     if(param[0] === null || param[0] === undefined){
       return false;
     }
@@ -56,10 +55,6 @@
     isLoggedIn = true;
   }
 
-  $(".btn-login").click(function(){
-     $(".login-button").trigger("click");
-  });
-
   api.registerConnectorClass('above-site-header', 'abb-header', {
     tagName: "div.sticky-sidebar",
     setupComponent(args, component) {
@@ -67,7 +62,14 @@
       component.set('currentuser', currentUser);
       component.set("isLoggedIn",isLoggedIn)
       api.onPageChange((url) => {
-        component.set("headerDetails",headerData)       
+        component.set("headerDetails",headerData)      
+        
+         
+          $(".btn-login").click(function(){
+            debgger;
+            $(".login-button").trigger("click");
+        });
+         
       })
     }
   });
