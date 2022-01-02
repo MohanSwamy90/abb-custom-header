@@ -3,7 +3,7 @@
   const { ajax } = require("discourse/lib/ajax");
   const {registerHelper} = require('discourse-common/lib/helpers');
 
-  registerHelper('isNullOrUnDefined', (function(param) {
+  registerHelper('isLoggedIn', (function(param) {
     debugger;
     if(param[0] === null || param[0] === undefined){
       return false;
@@ -96,7 +96,7 @@
             {{/each}}
           </ul>
           <div class="login-wrap">
-            {{#if (isNullOrUnDefined currentUser)}}
+            {{#if (isLoggedIn currentUser)}}
             <div class="user-options-group p-2">
               <span class="expand-user-options">
                 <div>
@@ -107,10 +107,8 @@
                   <img alt="arrow" width="20" height="20" class="user-icon-arrow" src="https://dev.partnerhub.connect.abb.com/cdn/images/UI_Down_16.svg">
                 </span>
               </span>
-            </div>
-            {{/if}}
-
-            {{#if (isNullOrUnDefined currentUser)}}
+            </div>          
+            {{else}}
             <div class="user-wrap">
               <div>
                 <label class="mt-2 btn-login">Login</label>
