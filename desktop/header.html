@@ -72,6 +72,10 @@
           $(".btn-login").click(function(){           
             $(".login-button").trigger("click");
         });
+
+         $(".expand-user-options").click(function(){
+          $(".dropdown-user-action").toggleClass("show");
+         });
          
       })
     }
@@ -125,13 +129,13 @@
                   </li>
                   <li>
                     <a class="dropdown-item">
-                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_User_16.svg">
+                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_Settings_16.svg">
                       Settings
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item">
-                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_User_16.svg">
+                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_LogOut_16.svg">
                       Logout
                     </a>
                   </li>
