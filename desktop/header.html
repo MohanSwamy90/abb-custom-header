@@ -3,7 +3,7 @@
   const { ajax } = require("discourse/lib/ajax");
   const {registerHelper} = require('discourse-common/lib/helpers');
 
-  registerHelper('eq', makeBoundHelper(function(params) {
+  registerHelper('eq', (function(params) {
     return params[0] === params[1];
   }));
 
