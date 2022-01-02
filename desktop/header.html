@@ -4,6 +4,7 @@
   const {registerHelper} = require('discourse-common/lib/helpers');
 
   registerHelper('isNullOrUnDefined', (function(param) {
+    debugger;
     if(param === null || param === undefined){
       return false;
     }
