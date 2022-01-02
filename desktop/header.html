@@ -56,6 +56,10 @@
     isLoggedIn = true;
   }
 
+  $(".btn-login").click(function(){
+     $(".login-button").trigger("click");
+  });
+
   api.registerConnectorClass('above-site-header', 'abb-header', {
     tagName: "div.sticky-sidebar",
     setupComponent(args, component) {
