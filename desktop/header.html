@@ -55,6 +55,7 @@
       component.set('currentuser', currentUser);
       api.onPageChange((url) => {
         component.set("headerDetails",headerData)
+        component.set("isLoggedIn",isLoggedIn)
       })
     }
   });
@@ -100,7 +101,14 @@
               </span>
             </div>
             {{/if}}
-           
+            <div class="user-wrap">
+              <div>
+                <label class="mt-2 btn-login">Login</label>
+                <label class="px-2 mt-2">
+                  <a class="btn-register" href="https://www.usermanagement.abb.com/account/Register?lang=en-GB&returnUrl=https://stage.partnerhub.connect.abb.com">Register</a>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </header>
