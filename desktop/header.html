@@ -1,6 +1,11 @@
 <script type="text/discourse-plugin" version="0.8">
   const container = Discourse.__container__;
   const { ajax } = require("discourse/lib/ajax");
+
+  Ember.Handlebars.registerHelper('test', function () {
+    return `test`;
+  });
+
   const headerData={
     headerLogo:'https://dev.partnerhub.connect.abb.com/cdn/images/abb-logo.svg',
     headerText:'Connect Partner Hub',
