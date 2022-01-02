@@ -3,8 +3,11 @@
   const { ajax } = require("discourse/lib/ajax");
   const {registerHelper} = require('discourse-common/lib/helpers');
 
-  registerHelper('eq', (function(params) {
-    return params[0] === params[1];
+  registerHelper('isNullOrUnDefined', (function(param) {
+    if(param === null || param === undefined){
+      return false;
+    }
+    return true;
   }));
 
   const headerData={
@@ -92,7 +95,7 @@
             {{/each}}
           </ul>
           <div class="login-wrap">
-            {{#if isLoggedIn}}
+            {{#if isNullOrUnDefined currentUser}}
             <div class="user-options-group p-2">
               <span class="expand-user-options">
                 <div>
