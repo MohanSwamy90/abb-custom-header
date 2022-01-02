@@ -40,6 +40,11 @@
 
 
   const currentUser = api.getCurrentUser();
+  const isLoggedIn = false;
+
+  if(currentUser !== undefined){
+    isLoggedIn = true;
+  }
 
   api.registerConnectorClass('above-site-header', 'abb-header', {
     tagName: "div.sticky-sidebar",
@@ -82,7 +87,7 @@
             {{/each}}
           </ul>
           <div class="login-wrap">
-            {{ #if currentuser}}
+            {{ #if isLoggedIn}}
             <div class="user-options-group p-2">
               <span class="expand-user-options">
                 <div>
@@ -95,7 +100,7 @@
               </span>
             </div>
             {{ /if }}
-            {{ #if currentuser}}
+            {{ #if !isLoggedIn}}
             <div class="user-wrap">
               <div>
                 <label class="mt-2 btn-login">Login</label>
