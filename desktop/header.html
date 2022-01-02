@@ -1,12 +1,12 @@
 <script type="text/discourse-plugin" version="0.8">
   const container = Discourse.__container__;
   const { ajax } = require("discourse/lib/ajax");
-  const {registerHelper} = require('discourse/lib/helpers');
+  const {registerHelper} = require('discourse-common/lib/helpers');
 
   registerHelper('eq', makeBoundHelper(function(params) {
     return params[0] === params[1];
   }));
-  
+
   const headerData={
     headerLogo:'https://dev.partnerhub.connect.abb.com/cdn/images/abb-logo.svg',
     headerText:'Connect Partner Hub',
