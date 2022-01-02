@@ -49,13 +49,11 @@
   api.registerConnectorClass('above-site-header', 'abb-header', {
     tagName: "div.sticky-sidebar",
     setupComponent(args, component) {
-
-
       component.set('hostname', window.location.hostname);
       component.set('currentuser', currentUser);
+      component.set("isLoggedIn",isLoggedIn)
       api.onPageChange((url) => {
-        component.set("headerDetails",headerData)
-        component.set("isLoggedIn",isLoggedIn)
+        component.set("headerDetails",headerData)       
       })
     }
   });
@@ -88,7 +86,7 @@
             {{/each}}
           </ul>
           <div class="login-wrap">
-            {{#if isLoggedIn}}
+            {{#if (isLoggedIn)}}
             <div class="user-options-group p-2">
               <span class="expand-user-options">
                 <div>
@@ -102,7 +100,7 @@
             </div>
             {{/if}}
 
-            
+         
             <div class="user-wrap">
               <div>
                 <label class="mt-2 btn-login">Login</label>
@@ -111,7 +109,7 @@
                 </label>
               </div>
             </div>
-           
+          
           </div>
         </div>
       </header>
