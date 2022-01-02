@@ -5,7 +5,7 @@
 
   registerHelper('isNullOrUnDefined', (function(param) {
     debugger;
-    if(param === null || param === undefined){
+    if(param[0] === null || param[0] === undefined){
       return false;
     }
     return true;
