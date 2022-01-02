@@ -218,7 +218,13 @@ body{
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
+    display: none;
 }
+
+.header-container  .dropdown-user-action.show{
+  display: block;
+}
+
 
 .header-container  .dropdown-user-action li {
 
