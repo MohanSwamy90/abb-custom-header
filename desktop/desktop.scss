@@ -251,7 +251,7 @@ body{
 }
 
 .header-container .tooltip{
-    display: block;
+    display: none;
     pointer-events: none;
     position: absolute;
     z-index: 1070;
@@ -272,7 +272,11 @@ body{
     line-break: auto;
     font-size: .875rem;
     word-wrap: break-word;
-    opacity: 1;
+    opacity: 0;
+}
+
+.header-container .tooltip.show{
+  opacity: 0.9;
 }
 
 .tooltip .arrow {
