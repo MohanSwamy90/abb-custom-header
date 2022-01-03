@@ -344,6 +344,10 @@ body{
     min-height: 50px;
 }
 
-.admin{
+@media (min-width: 1024px) {
 
+.icon-div {
+    display: none;
 }
+}
+
