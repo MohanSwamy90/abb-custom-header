@@ -79,14 +79,12 @@
          $(".expand-user-options").click(function(){
             $(".dropdown-user-action").toggleClass("show");
          });
-                
-         $("body").on("mouseenter", ".header-content .nav-list .menu-item",function(){
-           debugger;
+
+         $("body").on("mouseenter", ".header-content .nav-list .menu-item",function(){          
           $(this).find(".bs-tooltip-bottom").addClass("show");
          });
 
-         $("body").on("mouseleave", ".header-content .nav-list .menu-item",function(){
-          debugger;
+         $("body").on("mouseleave", ".header-content .nav-list .menu-item",function(){         
           $(this).find(".bs-tooltip-bottom").removeClass("show");
          });      
       })
