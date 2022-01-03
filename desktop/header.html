@@ -123,7 +123,7 @@
                   </div>
                   <div class="tile-div">
                     <div class="tile-name">
-                      <a>{{l.linkText}}</a>
+                      <a href="{{l.linkUrl}}">{{l.linkText}}</a>
                     </div> 
                     <div class="bs-tooltip-bottom customClass in tooltip tooltip-bottom bottom">
                          <div class="tooltip-arrow arrow">
@@ -132,7 +132,7 @@
                            <div class="tooltip-template">
                              <div class="title-tooltip-wrap">
                                <div>
-                                 <img class="tile-tooltip-icon" src="https://stage.partnerhub.connect.abb.com/cdn/images/tile-icons/icon_DigitalTalks.svg">
+                                 <img class="tile-tooltip-icon" src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg">
                                </div>
                                <div>
                                  <span>{{l.linkText}}</span>
@@ -157,29 +157,29 @@
             <div class="user-options-group p-2">
               <span class="expand-user-options">
                 <div>
-                  <img class="user-image" height="23" width="25" class="user-image" src="https://dev.partnerhub.connect.abb.com/cdn/images/avatar.svg"/>
+                  <img class="user-image" height="23" width="25" class="user-image" src="{{domainName}}/cdn/images/avatar.svg"/>
                 </div>
                 <span class="user-name px-2">{{currentuser.name}}</span>
                 <span class="pr-2">
-                  <img alt="arrow" width="20" height="20" class="user-icon-arrow" src="https://dev.partnerhub.connect.abb.com/cdn/images/UI_Down_16.svg">
+                  <img alt="arrow" width="20" height="20" class="user-icon-arrow" src="{{domainName}}/cdn/images/UI_Down_16.svg">
                 </span>
               </span>
               <ul class="dropdown-menu dropdown-user-action">
                   <li>
                     <a class="dropdown-item">
-                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_User_16.svg">
+                      <img class="width-20 mx-2" src="{{domainName}}/cdn/images/UI_User_16.svg">
                       My Profile
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item">
-                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_Settings_16.svg">
+                      <img class="width-20 mx-2" src="{{domainName}}/cdn/images/UI_Settings_16.svg">
                       Settings
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item">
-                      <img class="width-20 mx-2" src="https://stage.partnerhub.connect.abb.com/cdn/images/UI_LogOut_16.svg">
+                      <img class="width-20 mx-2" src="{{domainName}}/cdn/images/UI_LogOut_16.svg">
                       Logout
                     </a>
                   </li>
