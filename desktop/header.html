@@ -2,6 +2,7 @@
   const container = Discourse.__container__;
   const { ajax } = require("discourse/lib/ajax");
   const {registerHelper} = require('discourse-common/lib/helpers');
+  const domainName = window.location.origin;
 
   registerHelper('isLoggedIn', (function(param) {   
     if(param[0] === null || param[0] === undefined){
@@ -11,39 +12,47 @@
   }));
 
   const headerData={
-    headerLogo:'https://dev.partnerhub.connect.abb.com/cdn/images/abb-logo.svg',
+    headerLogo:domainName+ '/cdn/images/abb-logo.svg',
     headerText:'Connect Partner Hub',
     links:[{
       linkText:'Discover',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/discover/'
+      linkUrl:domainName+'/discover/',
+      description:'Get instant access to a world of information'
     },
     {
       linkText:'Learning',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/Learning/'
+      linkUrl:domainName+'/Learning/',
+      description:'The best way to enhance your knowledge'
     },
     {
       linkText:'Project',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/Project/'
+      linkUrl:domainName+'/Project/',
+      description:'The best way to enhance your knowledge'
     },
     {
       linkText:'Idea Tank',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/IdeaTank/'
+      linkUrl:domainName+'/IdeaTank/',
+      description:'We are curious to know your ideas'
     },
     {
       linkText:'Developers',
-      linkUrl:'https://developers.connect.abb.com/getting-started/'
+      linkUrl:'https://developers.connect.abb.com/getting-started/',
+      description:'The platform for developers'
     },
     {
       linkText:'Distributors',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/distributors/'
+      linkUrl:domainName+'/distributors/',
+      description:'Access to dedicated info, tools & services to facilitate relationship with ABB'
     },
     {
       linkText:'Repo',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/Repo/'
+      linkUrl:domainName+'/Repo/',
+      description:'Access to your documents, folders and files for safekeeping with ABB'
     },
     {
       linkText:'ESCO',
-      linkUrl:'https://dev.partnerhub.connect.abb.com/esco/'
+      linkUrl:domainName+'/esco/',
+      description:'Access to dedicated information, tools and services to facilitate relationship with ABB'
     }]
   };
 
@@ -60,7 +69,8 @@
     setupComponent(args, component) {
       component.set('hostname', window.location.hostname);
       component.set('currentuser', currentUser);
-      component.set("isLoggedIn",isLoggedIn)
+      component.set("isLoggedIn",isLoggedIn);
+      component.set("domainName",domainName)
       api.onPageChange((url) => {
         component.set("headerDetails",headerData)      
       
@@ -109,7 +119,7 @@
               <div class="title-div">
                 <div class="nav-item-content">
                   <div class="icon-div">
-                       <img src="https://stage.partnerhub.connect.abb.com/cdn/images/tile-icons/icon_DigitalTalks.svg"/>
+                       <img src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg"/>
                   </div>
                   <div class="tile-div">
                     <div class="tile-name">
