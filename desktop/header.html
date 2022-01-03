@@ -63,9 +63,7 @@
       component.set("isLoggedIn",isLoggedIn)
       api.onPageChange((url) => {
         component.set("headerDetails",headerData)      
-        
-        debugger;
-
+      
           if(currentUser === null){
             $(".login-button").trigger("click");
           }
@@ -76,29 +74,18 @@
 
           $(".btn-login").click(function(){           
             $(".login-button").trigger("click");
-        });
+          });
 
          $(".expand-user-options").click(function(){
             $(".dropdown-user-action").toggleClass("show");
          });
-
-        debugger;
-
-        $(".menu-item").click(function(){
-          alert("test");
-        });
-
-        $(".title-content").click(function(){
-          alert("test");
-        });
-
-       
-         $("body").on('.header-content .nav-list .menu-item','mouseover',function(){
+                
+         $("body").on("mouseenter", ".header-content .nav-list .menu-item",function(){
            debugger;
           $(this).find(".bs-tooltip-bottom").addClass("show");
          });
 
-         $("body").on('.header-content .nav-list .menu-item','mouseout',function(){
+         $("body").on("mouseleave", ".header-content .nav-list .menu-item",function(){
           debugger;
           $(this).find(".bs-tooltip-bottom").removeClass("show");
          });      
