@@ -79,16 +79,16 @@
         });
 
          $(".expand-user-options").click(function(){
-          $(".dropdown-user-action").toggleClass("show");
+            $(".dropdown-user-action").toggleClass("show");
          });
 
-         $(".header-content .nav-list .menu-item").hover(function(){
-           debugger;
-           $(this).find(".bs-tooltip-bottom").addClass("show");
-         },function(){
+         $("body").on('.header-content .nav-list .menu-item','mouseover',function(){
+          $(this).find(".bs-tooltip-bottom").addClass("show");
+         });
+
+         $("body").on('.header-content .nav-list .menu-item','mouseout',function(){
           $(this).find(".bs-tooltip-bottom").removeClass("show");
-         })
-         
+         });      
       })
     }
   });
