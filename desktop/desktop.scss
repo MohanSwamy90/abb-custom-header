@@ -557,7 +557,79 @@ body{
     align-items: center;
 }
 
+.header-content .abb-logo {
+  width: 96px;
+}
 
+.header-container .header .abb-title{
+    display: inline;
+    padding: 0 0 0 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-family: Abbvoice-medium,sans-serif;
+    font-weight: 500;
+}
+
+.header-container .header .nav-list{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    position: relative;
+    top: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.header-container .header .nav-list li{
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 1px;
+}
+
+.header-container .header .nav-list li .nav-item-content{
+  display: flex;
+}
+
+.header-container .header .nav-list li .nav-item-content .tile-name{
+    padding: 0 0.8rem;
+    font-size: 1.1rem;
+    font-family: Abbvoice-medium,sans-serif;
+    cursor: pointer;
+    color: #242424;
+}
+
+.header-container .header .nav-list li .nav-item-content .tile-name a{
+ color: #242424;
+}
+
+.header-container .header .p-2{
+  padding: 0.5rem !important;
+}
+
+.header-container .header .expand-user-options{
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-container .header .user-image{
+    width: 30px;
+    height: 30px;
+}
+
+.header-container .header .user-name{
+    font-family: Abbvoice-medium,sans-serif;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0;
+}
 
 .header-container .header .px-2{
   padding-right: 0.5rem !important;
