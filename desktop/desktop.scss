@@ -353,10 +353,508 @@ body{
     min-height: 50px;
 }
 
-@media (min-width: 1024px) {
+.abb-title {
+	display: none;
+	margin-bottom: 0;
+	cursor: pointer;
+	font-family: Abbvoice-medium, sans-serif;
+	font-weight: 500
+}
+
+@media (min-width:768px) {
+	.abb-title[_ngcontent-egk-c41] {
+		display: inline;
+		padding: 0 0 0 1rem;
+		font-size: 1rem
+	}
+}
+
+@media (min-width:1024px) {
+	.abb-title[_ngcontent-egk-c41] {
+		display: inline;
+		padding: 0 0 0 1rem;
+		font-size: 1rem
+	}
+}
+
+@media (min-width:1440px) {
+	.abb-title[_ngcontent-egk-c41] {
+		display: inline;
+		padding: 0 0 0 1.5rem;
+		font-size: 1.4rem
+	}
+}
+
+@media (min-width:2560px) {
+	.abb-title[_ngcontent-egk-c41] {
+		display: inline;
+		padding: 0 2rem;
+		font-size: 2.2rem
+	}
+}
+
+@media (min-width:3840px) {
+	.abb-title[_ngcontent-egk-c41] {
+		display: inline;
+		padding: 0 5rem;
+		font-size: 2.2rem
+	}
+}
+
+.abb-logo {
+	width: 4rem;
+	cursor: pointer
+}
+
+@media (min-width:1440px) {
+	.abb-logo[_ngcontent-egk-c41] {
+		width: 96px
+	}
+}
+
+@media (min-width:2560px) {
+	.abb-logo[_ngcontent-egk-c41] {
+		width: 156px
+	}
+}
+
+.tile-name {
+	font-family: Abbvoice-medium, sans-serif;
+	cursor: pointer;
+	font-size: 18px;
+	margin-bottom: 0
+}
+
+@media (min-width:768px) {
+	.tile-name[_ngcontent-egk-c41] {
+		padding: 0 .8em 0 0;
+		font-size: 18px
+	}
+}
+
+@media (min-width:1024px) {
+	.tile-name[_ngcontent-egk-c41] {
+		padding: 0 .5rem;
+		font-size: .8rem
+	}
+}
+
+@media (min-width:1440px) {
+	.tile-name[_ngcontent-egk-c41] {
+		padding: 0 .8rem;
+		font-size: 1.1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.tile-name[_ngcontent-egk-c41] {
+		font-size: 1.5rem;
+		padding: 0 2rem
+	}
+}
+
+@media (min-width:3840px) {
+	.tile-name[_ngcontent-egk-c41] {
+		font-size: 2rem;
+		padding: 0 2rem
+	}
+}
+
+.header{
+	grid-area: header;
+	background-color: #fff;
+	color: #242424;
+	box-shadow: 0 2px 6px -2px #ccc;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1002;
+	height: 4rem
+}
+
+@media (min-width:1440px) {
+	.header[_ngcontent-egk-c41] {
+		height: 5rem
+	}
+}
+
+@media (min-width:2560px) {
+	.header[_ngcontent-egk-c41] {
+		height: 8rem
+	}
+}
+
+.header-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem
+}
+
+@media (min-width:1024px) {
+	.header-content[_ngcontent-egk-c41] {
+		height: 4rem;
+		padding: 0 1rem
+	}
+}
+
+@media (min-width:1440px) {
+	.header-content[_ngcontent-egk-c41] {
+		padding: 0 2rem;
+		height: 5rem
+	}
+}
+
+@media (min-width:2560px) {
+	.header-content[_ngcontent-egk-c41] {
+		padding: 0 5rem;
+		height: 8rem
+	}
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: "header" "main" "footer";
+	grid-template-rows: 4em auto auto
+}
+
+@media (min-width:1440px) {
+	.grid-container[_ngcontent-egk-c41] {
+		grid-template-rows: 5em auto auto
+	}
+}
+
+@media (min-width:2560px) {
+	.grid-container[_ngcontent-egk-c41] {
+		grid-template-rows: 8em auto auto
+	}
+}
+
+.quick-link-list {
+	min-width: 150px;
+	list-style: none;
+	padding: 0 1rem;
+	line-height: 28px
+}
+
+.quick-link-list {
+	cursor: pointer;
+	font-size: .8rem;
+	font-family: ABBvoice, Helvetica, Arial, sans-serif
+}
+
+@media (min-width:1024px) {
+	.quick-link-list {
+		font-size: .8rem
+	}
+}
+
+@media (min-width:1440px) {
+	.quick-link-list {
+		font-size: 1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.quick-link-list {
+		font-size: 1.5rem
+	}
+}
+
+.quick-link-list {
+	line-height: 1.5rem
+}
+
+@media (min-width:1440px) {
+	.quick-link-list {
+		line-height: 2rem
+	}
+}
+
+@media (min-width:2560px) {
+	.quick-link-list{
+		line-height: 3rem
+	}
+}
+
+.column-heading {
+	color: #aaa;
+	font-size: .8rem;
+	font-family: ABBvoice, Helvetica, Arial, sans-serif
+}
+
+@media (min-width:1440px) {
+	.column-heading[_ngcontent-egk-c41] {
+		font-size: 1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.column-heading[_ngcontent-egk-c41] {
+		font-size: 1.5rem
+	}
+}
+
+.nav-list {
+	display: block;
+	text-decoration: none;
+	list-style: none;
+	width: 100%;
+	position: absolute;
+	padding-left: 0;
+	background-color: #fff;
+	top: 4rem
+}
+
+@media (min-width:768px) {
+	.nav-list[_ngcontent-egk-c41] {
+		top: 4rem
+	}
+}
+
+@media (min-width:1024px) {
+	.nav-list[_ngcontent-egk-c41] {
+		display: flex;
+		justify-content: space-around;
+		width: auto;
+		position: relative;
+		top: .5rem
+	}
+}
+
+.nav-list li {
+	background-color: #f0f0f0;
+	padding: 10px 0;
+	margin-bottom: 1px
+}
+
+@media (min-width:1024px) {
+	.nav-list[_ngcontent-egk-c41] li[_ngcontent-egk-c41] {
+		background-color: #fff
+	}
+}
+
+.nav-list:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-color: transparent transparent #f0f0f0;
+	border-style: solid;
+	border-width: 0 10px 8px;
+	position: absolute;
+	top: -8px;
+	left: 17px
+}
+
+@media (min-width:1024px) {
+	.nav-list[_ngcontent-egk-c41]:before {
+		display: none
+	}
+}
+
+.nav-item-content {
+	display: flex
+}
+
+.expand-nav{
+	cursor: pointer;
+	margin: 14px;
+	width: 24px
+}
+
+@media (min-width:1024px) {
+	.expand-nav[_ngcontent-egk-c41] {
+		display: none
+	}
+}
+
+.title-content,
+.tooltip-template{
+	display: flex;
+	flex-direction: row;
+	align-items: center
+}
+
+@media (min-width:1024px) {
+	.tooltip-template {
+		font-size: .8rem
+	}
+}
+
+@media (min-width:1440px) {
+	.tooltip-template {
+		font-size: 1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.tooltip-template {
+		font-size: 1.5rem
+	}
+}
 
 .icon-div {
-    display: none;
-}
+	margin: 0 .5rem 0 .8rem
 }
 
+@media (min-width:1024px) {
+	.icon-div{
+		display: none
+	}
+}
+
+.tile-icon {
+	width: 2rem;
+	margin: 2px 5px 2px 15px
+}
+
+@media (min-width:1440px) {
+	.tile-icon {
+		display: none
+	}
+}
+
+.tile-description {
+	font-size: 14px;
+	font-family: Abbvoice-light, sans-serif
+}
+
+@media (min-width:1024px) {
+	.tile-description {
+		display: none
+	}
+}
+
+.desc-divider {
+	border-left: 1px solid #242424;
+	min-height: 50px
+}
+
+.tile-tooltip-icon {
+	width: 35px
+}
+
+.tool-tip-description {
+	width: 220px;
+	padding: 0 15px;
+	text-align: left;
+	min-height: 50px
+}
+
+.main {
+	grid-area: main;
+	min-height: calc(100vh - 300px);
+	overflow: hidden
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #000;
+	color: #fff;
+	z-index: 1
+}
+
+.footer-columns {
+	flex: 25%;
+	padding-top: 1rem
+}
+
+.footer-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap
+}
+
+@media (min-width:768px) {
+	.footer-row {
+		padding: 0 1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.footer-row {
+		padding: 0 5rem
+	}
+}
+
+.footer-copyright {
+	font-size: 13px;
+	background-color: #000
+}
+
+@media (min-width:768px) {
+	.footer-copyright {
+		padding: 0 1rem;
+		font-size: .8rem
+	}
+}
+
+@media (min-width:1440px) {
+	.footer-copyright {
+		padding: 0 1rem;
+		font-size: 1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.footer-copyright {
+		padding: 0 5rem;
+		font-size: 1.5rem
+	}
+}
+
+.footer-logo {
+	background-color: #000
+}
+
+@media (min-width:768px) {
+	.footer-logo {
+		padding: 0 1rem
+	}
+}
+
+@media (min-width:2560px) {
+	.footer-logo {
+		padding: 0 5rem
+	}
+}
+
+.footer-abb-logo {
+	width: 60px;
+	margin-top: 1rem;
+	margin-left: 1rem
+}
+
+@media (min-width:1440px) {
+	.footer-abb-logo {
+		width: 96px
+	}
+}
+
+@media (min-width:2560px) {
+	.footer-abb-logo {
+		width: 156px;
+		margin-top: 2rem
+	}
+}
+
+@media (min-width:1440px) {
+	.login-wrap {
+		min-width: 18rrem
+	}
+}
+
+@media (min-width:2560px) {
+	.login-wrap {
+		min-width: 25rem
+	}
+}
+
+@media (min-width:3840px) {
+	.login-wrap {
+		min-width: 30rem
+	}
+}
