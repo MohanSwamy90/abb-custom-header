@@ -989,31 +989,6 @@ body{
   display: block;
 }
 
-
-.header-container  .dropdown-user-action li {
-
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-}
-
-.header-container  .dropdown-user-action li a {
-
-    display: block;
-    width: 100%;
-    font-family: Abbvoice-medium,sans-serif;
-    color: #242424;
-    padding: 0.5em 2rem;
-    font-size: 1.1rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-}
-
 .header-container .tooltip{
     display: none;
     pointer-events: none;
