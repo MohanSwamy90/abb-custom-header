@@ -84,6 +84,10 @@
 
         debugger;
 
+        $(".menu-item").click(function(){
+alert("test");
+        });
+
         $("body").on('.header-content .nav-list .menu-item','click',function(){
           debugger;
          $(this).find(".bs-tooltip-bottom").toggleClass("show");
