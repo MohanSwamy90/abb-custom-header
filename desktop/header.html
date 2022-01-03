@@ -81,6 +81,12 @@
          $(".expand-user-options").click(function(){
           $(".dropdown-user-action").toggleClass("show");
          });
+
+         $(".header-content .nav-list .menu-item").hover(function(){
+           $(this).find(".bs-tooltip-bottom").addClass("show");
+         },function(){
+          $(this).find(".bs-tooltip-bottom").removeClass("show");
+         })
          
       })
     }
@@ -100,7 +106,7 @@
           </div>
           <ul class="nav-list">
             {{#each headerDetails.links as |l|}}
-            <li>
+            <li class="menu-item">
               <div class="title-div">
                 <div class="nav-item-content">
                   <div class="icon-div">
