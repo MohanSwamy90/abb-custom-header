@@ -308,6 +308,12 @@ body{
 	}
 }
 
+@media (max-width:1024px) {
+	.nav-list{
+	  display: none;
+	}
+}
+
 .nav-item-content {
 	display: flex
 }
