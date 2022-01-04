@@ -110,6 +110,11 @@
             $(".header-container .nav-list").toggleClass("show");
          });
 
+         $("body").on("click",".logout",function(){
+           const logoutUrl = "https://login.microsoftonline.com/372ee9e0-9ce0-4033-a64a-c07073a91ecd/oauth2/logout?client_id=dbf57ffb-0c95-4117-ae7a-153e3b953646&post_logout_redirect_uri="+domainName;
+           window.location.href = logoutUrl;
+         });
+
       })
     }
   });
@@ -195,7 +200,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item">
+                    <a class="dropdown-item" class="logout">
                       <img class="width-20 mx-2" src="{{domainName}}/cdn/images/UI_LogOut_16.svg">
                       Logout
                     </a>
