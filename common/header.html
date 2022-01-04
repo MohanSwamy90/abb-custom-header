@@ -66,7 +66,7 @@
 
 
   const currentUser = api.getCurrentUser();
-  const logoutUrl = "https://login.microsoftonline.com/372ee9e0-9ce0-4033-a64a-c07073a91ecd/oauth2/logout?client_id=dbf57ffb-0c95-4117-ae7a-153e3b953646&post_logout_redirect_uri="+domainName;
+  const logoutUrl = "https://login.microsoftonline.com/372ee9e0-9ce0-4033-a64a-c07073a91ecd/oauth2/logout?post_logout_redirect_uri="+domainName;
   let isLoggedIn = false;
 
   if(currentUser !== undefined){
@@ -115,7 +115,7 @@
 
          $("body").on("click",".signout",function(){
            localStorage.clear();
-           window.location.href= domainName;
+           window.location.href= logoutUrl;
          });
 
       })
@@ -203,7 +203,7 @@
                     </a>
                   </li>
                   <li class="signout">
-                    <a class="dropdown-item" href="{{logoutUrl}}">
+                    <a class="dropdown-item">
                       <img class="width-20 mx-2" src="{{domainName}}/cdn/images/UI_LogOut_16.svg">
                       Logout
                     </a>
