@@ -110,21 +110,25 @@
       <header class="header">
         <div class="header-content">
           <div class="title-content">
+            <img src="{{domainName}}/cdn/images/UI_Matrix.svg" class="expand-nav">
             <img alt="abb logo" class="abb-logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
             <span class="abb-title"> {{headerDetails.headerText}} </span>
           </div>
           <ul class="nav-list">
             {{#each headerDetails.links as |l|}}
             <li class="menu-item">
-              <div class="title-div">
-                <div class="nav-item-content">
+              <div class="nav-item-content">
+                <div>
                   <div class="icon-div">
-                       <img src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg"/>
+                       <img class="tile-icon" src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg"/>
                   </div>
-                  <div class="tile-div">
+                  <div class="title-div">
                     <div class="tile-name">
                       <a href="{{l.linkUrl}}">{{l.linkText}}</a>
                     </div> 
+                    <div class="tile-description">
+                      Get instant access to a world of information
+                    </div>
                     <div class="bs-tooltip-bottom customClass in tooltip tooltip-bottom bottom">
                          <div class="tooltip-arrow arrow">
                          </div>
