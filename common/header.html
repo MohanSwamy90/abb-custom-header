@@ -17,42 +17,50 @@
     links:[{
       linkText:'Discover',
       linkUrl:domainName+'/discover/',
-      description:'Get instant access to a world of information'
+      description:'Get instant access to a world of information',
+      iconName:'icon_DigitalTalks.svg'
     },
     {
       linkText:'Learning',
       linkUrl:domainName+'/Learning/',
-      description:'The best way to enhance your knowledge'
+      description:'The best way to enhance your knowledge',
+      iconName:'icon_Learning.svg'
     },
     {
       linkText:'Project',
       linkUrl:domainName+'/Project/',
-      description:'The best way to enhance your knowledge'
+      description:'The best way to enhance your knowledge',
+      iconName:'icon_Project.svg'
     },
     {
       linkText:'Idea Tank',
       linkUrl:domainName+'/IdeaTank/',
-      description:'We are curious to know your ideas'
+      description:'We are curious to know your ideas',
+      iconName:'icon_IdeaTank.svg'
     },
     {
       linkText:'Developers',
       linkUrl:'https://developers.connect.abb.com/getting-started/',
-      description:'The platform for developers'
+      description:'The platform for developers',
+      iconName:'icon_Developer.svg'
     },
     {
       linkText:'Distributors',
       linkUrl:domainName+'/distributors/',
-      description:'Access to dedicated info, tools & services to facilitate relationship with ABB'
+      description:'Access to dedicated info, tools & services to facilitate relationship with ABB',
+      iconName:'icon_Distributors.svg'
     },
     {
       linkText:'Repo',
       linkUrl:domainName+'/Repo/',
-      description:'Access to your documents, folders and files for safekeeping with ABB'
+      description:'Access to your documents, folders and files for safekeeping with ABB',
+      iconName:'icon_FileRepo.svg'
     },
     {
       linkText:'ESCO',
       linkUrl:domainName+'/esco/',
-      description:'Access to dedicated information, tools and services to facilitate relationship with ABB'
+      description:'Access to dedicated information, tools and services to facilitate relationship with ABB',
+      iconName:'ESCO.svg'
     }]
   };
 
@@ -97,6 +105,11 @@
          $("body").on("mouseleave", ".header-content .nav-list .menu-item",function(){         
           $(this).find(".bs-tooltip-bottom").removeClass("show");
          });      
+
+         $("body").on("click",".header-container .expand-nav",function(){
+            $(".header-container .nav-list").toggleClass("show");
+         });
+
       })
     }
   });
@@ -110,21 +123,25 @@
       <header class="header">
         <div class="header-content">
           <div class="title-content">
+            <img src="{{domainName}}/cdn/images/UI_Matrix.svg" class="expand-nav">
             <img alt="abb logo" class="abb-logo" width="60" height="60" src="{{headerDetails.headerLogo}}" class="abb-logo">
             <span class="abb-title"> {{headerDetails.headerText}} </span>
           </div>
           <ul class="nav-list">
             {{#each headerDetails.links as |l|}}
             <li class="menu-item">
-              <div class="title-div">
-                <div class="nav-item-content">
+              <div class="nav-item-content">
+                
                   <div class="icon-div">
-                       <img src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg"/>
+                       <img class="tile-icon" src="{{domainName}}/cdn/images/tile-icons/{{l.iconName}}"/>
                   </div>
-                  <div class="tile-div">
+                  <div class="title-div">
                     <div class="tile-name">
                       <a href="{{l.linkUrl}}">{{l.linkText}}</a>
                     </div> 
+                    <div class="tile-description">
+                      {{l.description}}
+                    </div>
                     <div class="bs-tooltip-bottom customClass in tooltip tooltip-bottom bottom">
                          <div class="tooltip-arrow arrow">
                          </div>
@@ -132,7 +149,7 @@
                            <div class="tooltip-template">
                              <div class="title-tooltip-wrap">
                                <div>
-                                 <img class="tile-tooltip-icon" src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg">
+                                 <img class="tile-tooltip-icon" src="{{domainName}}/cdn/images/tile-icons/{{l.iconName}}">
                                </div>
                                <div>
                                  <span>{{l.linkText}}</span>
@@ -147,7 +164,7 @@
                          </div>
                     </div>  
                   </div>                 
-                </div>                             
+                                      
               </div>              
             </li>
             {{/each}}
