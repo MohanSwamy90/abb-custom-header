@@ -18,41 +18,49 @@
       linkText:'Discover',
       linkUrl:domainName+'/discover/',
       description:'Get instant access to a world of information'
+      iconName:'icon_DigitalTalks.svg'
     },
     {
       linkText:'Learning',
       linkUrl:domainName+'/Learning/',
-      description:'The best way to enhance your knowledge'
+      description:'The best way to enhance your knowledge',
+      iconName:'icon_Learning.svg'
     },
     {
       linkText:'Project',
       linkUrl:domainName+'/Project/',
-      description:'The best way to enhance your knowledge'
+      description:'The best way to enhance your knowledge',
+      iconName:'icon_Project.svg'
     },
     {
       linkText:'Idea Tank',
       linkUrl:domainName+'/IdeaTank/',
-      description:'We are curious to know your ideas'
+      description:'We are curious to know your ideas',
+      iconName:'icon_IdeaTank.svg'
     },
     {
       linkText:'Developers',
       linkUrl:'https://developers.connect.abb.com/getting-started/',
-      description:'The platform for developers'
+      description:'The platform for developers',
+      iconName:'icon_Developers.svg'
     },
     {
       linkText:'Distributors',
       linkUrl:domainName+'/distributors/',
-      description:'Access to dedicated info, tools & services to facilitate relationship with ABB'
+      description:'Access to dedicated info, tools & services to facilitate relationship with ABB',
+      iconName:'icon_Distributors.svg'
     },
     {
       linkText:'Repo',
       linkUrl:domainName+'/Repo/',
-      description:'Access to your documents, folders and files for safekeeping with ABB'
+      description:'Access to your documents, folders and files for safekeeping with ABB',
+      iconName:'icon_Repo.svg'
     },
     {
       linkText:'ESCO',
       linkUrl:domainName+'/esco/',
-      description:'Access to dedicated information, tools and services to facilitate relationship with ABB'
+      description:'Access to dedicated information, tools and services to facilitate relationship with ABB',
+      iconName:'icon_Esco.svg'
     }]
   };
 
@@ -120,14 +128,14 @@
               <div class="nav-item-content">
                 
                   <div class="icon-div">
-                       <img class="tile-icon" src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg"/>
+                       <img class="tile-icon" src="{{domainName}}/cdn/images/tile-icons/{{l.iconName}}"/>
                   </div>
                   <div class="title-div">
                     <div class="tile-name">
                       <a href="{{l.linkUrl}}">{{l.linkText}}</a>
                     </div> 
                     <div class="tile-description">
-                      Get instant access to a world of information
+                      {{l.description}}
                     </div>
                     <div class="bs-tooltip-bottom customClass in tooltip tooltip-bottom bottom">
                          <div class="tooltip-arrow arrow">
@@ -136,7 +144,7 @@
                            <div class="tooltip-template">
                              <div class="title-tooltip-wrap">
                                <div>
-                                 <img class="tile-tooltip-icon" src="{{domainName}}/cdn/images/tile-icons/icon_DigitalTalks.svg">
+                                 <img class="tile-tooltip-icon" src="{{domainName}}/cdn/images/tile-icons/{{l.iconName}}">
                                </div>
                                <div>
                                  <span>{{l.linkText}}</span>
