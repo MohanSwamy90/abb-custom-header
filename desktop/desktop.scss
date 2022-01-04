@@ -301,6 +301,9 @@ body{
 @media (min-width:1024px) {
 	.nav-list:before {
 		display: none
+	},
+	.header-container .bs-tooltip-bottom{
+	   display:block;
 	}
 }
 
@@ -316,11 +319,8 @@ body{
 
 @media (min-width:1024px) {
 	.expand-nav {
-		display: none;
-	},
-	.header-container .bs-tooltip-bottom{
-	 display: block;
-	}	
+		display: none
+	}
 }
 
 .title-content,
