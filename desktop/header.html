@@ -105,6 +105,11 @@
          $("body").on("mouseleave", ".header-content .nav-list .menu-item",function(){         
           $(this).find(".bs-tooltip-bottom").removeClass("show");
          });      
+
+         $("body").on("click",".header-container .expand-nav",function(){
+            $(".header-container .nav-list").toggleClass("show");
+         });
+
       })
     }
   });
