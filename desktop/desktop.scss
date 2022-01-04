@@ -1041,6 +1041,31 @@ body{
     padding: 1rem 0.5rem;
 }
 
+.header-container .tooltip-template{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.header-container .title-tooltip-wrap{
+    min-width: 100px;
+    line-height: 10px;
+    padding: 5px 10px 5px 5px;
+}
+
+.header-container .desc-divider{
+    border-left: 1px solid #242424;
+    min-height: 50px;
+}
+
+.header-container .tool-tip-description{
+    width: 220px;
+    padding: 0 15px;
+    text-align: left;
+    min-height: 50px;
+}
+
 .width-20 {
     width: 20px;
 }
