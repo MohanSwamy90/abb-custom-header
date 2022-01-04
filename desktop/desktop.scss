@@ -316,8 +316,11 @@ body{
 
 @media (min-width:1024px) {
 	.expand-nav {
-		display: none
-	}
+		display: none;
+	},
+	.header-container .bs-tooltip-bottom{
+	 display: block;
+	}	
 }
 
 .title-content,
@@ -1014,6 +1017,7 @@ body{
 
 .header-container .bs-tooltip-bottom{
   padding: 0.4rem 0;
+  display: none;
 }
 
 .header-container .bs-tooltip-bottom .arrow{
