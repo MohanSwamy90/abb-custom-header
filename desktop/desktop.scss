@@ -312,6 +312,10 @@ body{
 	.nav-list{
 	  display: none;
 	}
+	
+	.nav-list.show{
+	  display: block;
+	}
 }
 
 .nav-item-content {
