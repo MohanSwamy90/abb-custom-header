@@ -901,31 +901,6 @@ body{
     align-items: center;
 }
 
-.header-container .header .nav-list{
-    display: flex;
-    justify-content: space-around;
-    width: auto;
-    position: relative;
-    top: 0.5rem;
-    text-decoration: none;
-    list-style: none;
-    padding-left: 0;
-    background-color: #fff;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-}
-
-.header-container .header .nav-list li{
-    background-color: #fff;
-    padding: 10px 0;
-    margin-bottom: 1px;
-}
-
-.header-container .header .nav-list li .nav-item-content{
-  display: flex;
-}
-
 .header-container .header .nav-list li .nav-item-content .tile-name a{
  color: #242424;
 }
