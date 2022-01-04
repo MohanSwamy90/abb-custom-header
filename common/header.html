@@ -111,8 +111,9 @@
          });
 
          $("body").on("click",".logout",function(){
+           localStorage.clear();
            const logoutUrl = "https://login.microsoftonline.com/372ee9e0-9ce0-4033-a64a-c07073a91ecd/oauth2/logout?client_id=dbf57ffb-0c95-4117-ae7a-153e3b953646&post_logout_redirect_uri="+domainName;
-           window.location.href = logoutUrl;
+           window.location.href = logoutUrl;          
          });
 
       })
