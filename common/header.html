@@ -96,8 +96,8 @@
           $(".btn-login").click(function(){           
             $(".login-button").trigger("click");
           });
-
-         $(".expand-user-options").click(function(){
+         
+          $("body").on("click", ".expand-user-options",function(){          
             $(".dropdown-user-action").toggleClass("show");
          });
 
